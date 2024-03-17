@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react'
+import './App.css'
+import { products } from './data/products'
+import ProductCard from './components/ProductCard'
 
 function App() {
+  useEffect(() => {
+    if (!localStorage.getItem('products')) {
+      localStorage.setItem('products', JSON.stringify(products))
+    }
+  }, [])
+
+  const { title, description, imgUrl, status, price } = products[2]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <ProductCard
+        title={title}
+        description={description}
+        imgUrl={imgUrl}
+        status={status === 'available'}
+        price={price}
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
