@@ -15,7 +15,7 @@ const ProductCard = ({ title, price, description, imgUrl, isAvailable }) => {
         </div>
         <p className='text-left'>{description}</p>
         <button
-          class='rounded-md text-sm px-4 py-2 bg-red-700 text-white disabled:bg-gray-400'
+          className='rounded-md text-sm px-4 py-2 bg-red-700 text-white disabled:bg-gray-400'
           disabled={!isAvailable}
         >
           ADD TO CART

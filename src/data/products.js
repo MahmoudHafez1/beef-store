@@ -1,6 +1,5 @@
-export const products = [
-  {
-    id: 1,
+export const products = {
+  1: {
     title: 'Ribeye Steak',
     status: 'available',
     description:
@@ -9,8 +8,7 @@ export const products = [
       'https://diethood.com/wp-content/uploads/2021/02/ribeye-steak-5.jpg',
     price: 46,
   },
-  {
-    id: 2,
+  2: {
     title: 'Ground Beef',
     status: 'available',
     description:
@@ -19,8 +17,7 @@ export const products = [
       'https://girlheartfood.com/wp-content/uploads/2023/04/One-Pan-Ground-Beef-and-Rice-3.jpg',
     price: 49.99,
   },
-  {
-    id: 3,
+  3: {
     title: 'Beef Tenderloin',
     status: 'unavailable',
     description:
@@ -29,4 +26,4 @@ export const products = [
       'https://www.wholesomeyum.com/wp-content/uploads/2022/11/wholesomeyum-Roasted-Beef-Tenderloin-Recipe-5.jpg',
     price: 70,
   },
-]
+}

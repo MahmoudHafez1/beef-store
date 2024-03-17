@@ -1,26 +1,29 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
-import { products } from './data/products'
-import ProductCard from './components/ProductCard'
+import { products as productsData } from './data/products'
+import ProductList from './components/ProductList'
 
 function App() {
+  const [products, setProducts] = useState({})
+  const [cart, setCart] = useState({})
+
   useEffect(() => {
     if (!localStorage.getItem('products')) {
-      localStorage.setItem('products', JSON.stringify(products))
+      localStorage.setItem('products', JSON.stringify(productsData))
+      setProducts(productsData)
+    } else {
+      setProducts(JSON.parse(localStorage.getItem('products')))
     }
   }, [])
 
-  const { title, description, imgUrl, status, price } = products[2]
+  const handleAddToCart = (productId) => {}
+
+  console.log('prod', products)
+  console.log('cart', cart)
 
   return (
     <div className='App'>
-      <ProductCard
-        title={title}
-        description={description}
-        imgUrl={imgUrl}
-        status={status === 'available'}
-        price={price}
-      />
+      <ProductList products={products} />
     </div>
   )
 }
