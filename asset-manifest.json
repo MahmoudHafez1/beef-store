@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/beef-store/static/css/main.9f37d809.css",
+    "main.js": "/beef-store/static/js/main.a87f79e6.js",
+    "static/js/453.1e4b5621.chunk.js": "/beef-store/static/js/453.1e4b5621.chunk.js",
+    "static/media/unavailable.jpg": "/beef-store/static/media/unavailable.1b26e04c6398ce982e5c.jpg",
+    "static/media/placeholder.webp": "/beef-store/static/media/placeholder.edeea012f0e473e3ed44.webp",
+    "index.html": "/beef-store/index.html",
+    "main.9f37d809.css.map": "/beef-store/static/css/main.9f37d809.css.map",
+    "main.a87f79e6.js.map": "/beef-store/static/js/main.a87f79e6.js.map",
+    "453.1e4b5621.chunk.js.map": "/beef-store/static/js/453.1e4b5621.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f37d809.css",
+    "static/js/main.a87f79e6.js"
+  ]
+}
